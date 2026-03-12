@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/funhouse-pup-cuts.html"
+    }
+  ]
+}
