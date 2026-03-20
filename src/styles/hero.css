@@ -1,0 +1,119 @@
+.hero-section {
+  position: relative;
+  min-height: calc(100vh - 88px);
+  display: grid;
+  align-items: center;
+  padding: 72px 0 88px;
+  isolation: isolate;
+}
+
+.hero-slides,
+.hero-slide,
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-slides {
+  overflow: hidden;
+}
+
+.hero-slide {
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transform: scale(1.03);
+  transition:
+    opacity 900ms ease,
+    transform 900ms ease;
+}
+
+.hero-slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(180deg, rgba(16, 22, 28, 0.45) 0%, rgba(16, 22, 28, 0.38) 30%, rgba(16, 22, 28, 0.76) 100%),
+    linear-gradient(90deg, rgba(193, 18, 31, 0.24), transparent 38%, rgba(245, 158, 11, 0.16));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 22px;
+  color: var(--cream);
+}
+
+.hero-kicker {
+  display: inline-flex;
+  width: fit-content;
+  padding: 8px 16px;
+  border: 1px solid rgba(247, 241, 225, 0.35);
+  border-radius: 999px;
+  background: rgba(22, 32, 42, 0.38);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero-content h1 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.98;
+  color: var(--cream);
+  text-shadow: 0 6px 30px rgba(8, 12, 16, 0.35);
+}
+
+.hero-copy {
+  max-width: 640px;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: rgba(247, 241, 225, 0.92);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+}
+
+.hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 0 24px;
+  border: 1px solid rgba(247, 241, 225, 0.38);
+  border-radius: 999px;
+  background: rgba(22, 32, 42, 0.32);
+  color: var(--cream);
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: calc(100vh - 78px);
+    padding: 48px 0 56px;
+  }
+
+  .hero-content {
+    gap: 18px;
+  }
+
+  .hero-content h1 {
+    max-width: 9.5ch;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-secondary {
+    justify-content: center;
+  }
+}
