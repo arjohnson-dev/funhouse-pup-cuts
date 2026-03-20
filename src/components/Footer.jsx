@@ -27,7 +27,7 @@ function Footer() {
           <div className="footer-details">
             <a
               className="contact-link-button footer-social-button"
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/profile.php?id=61573056279935"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -70,9 +70,17 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <p className="footer-copy">
-        © 2025 <strong>Funhouse Pup Cuts</strong> — All Rights Reserved
-      </p>
+      <div className="footer-meta">
+        <p className="footer-copy">
+          © 2025 <strong>Funhouse Pup Cuts</strong> — All Rights Reserved
+        </p>
+        <p className="footer-credit">
+          developed by{' '}
+          <a href="https://arjohnson.dev/" target="_blank" rel="noopener noreferrer">
+            arjohnson.dev
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
