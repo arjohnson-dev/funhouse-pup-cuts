@@ -1,12 +1,12 @@
 const hours = [
-  ['Monday', 'Closed'],
-  ['Tuesday', '9 AM-4 PM'],
-  ['Wednesday', '9 AM-4 PM'],
-  ['Thursday', '9 AM-4 PM'],
-  ['Friday', '9 AM-4 PM'],
-  ['Saturday', '9 AM-4 PM'],
-  ['Sunday', 'Closed'],
-]
+  ["Monday", "10a - 3p"],
+  ["Tuesday", "9a - 4p"],
+  ["Wednesday", "9a - 4p"],
+  ["Thursday", "9a - 4p"],
+  ["Friday", "9a - 4p"],
+  ["Saturday", "9a - 4p"],
+  ["Sunday", "Closed"],
+];
 
 function Footer() {
   return (
@@ -74,7 +74,7 @@ function Footer() {
         © 2025 <strong>Funhouse Pup Cuts</strong> — All Rights Reserved
       </p>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
