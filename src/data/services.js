@@ -6,6 +6,7 @@ const services = [
       { size: "Small", price: "$35-45" },
       { size: "Medium", price: "$45-55" },
       { size: "Large", price: "$65+" },
+      { size: "Cats", price: "$65" },
     ],
   },
   {
@@ -15,6 +16,7 @@ const services = [
       { size: "Small", price: "$65-75" },
       { size: "Medium", price: "$75-85" },
       { size: "Large", price: "$95+" },
+      { size: "Cats", price: "$85" },
     ],
   },
   {
