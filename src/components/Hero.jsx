@@ -50,7 +50,11 @@ function Hero() {
         Pup Cuts
       </h1>
       <p className="hero-tagline">The Greatest Groom on Earth</p>
-      <a className="btn-book-hero" href="#book" id="book">
+      <a
+        className="btn-book-hero"
+        href="https://groomer.io/salon-booking/funhousepupcuts?p=&c="
+        id="book"
+      >
         Book Now
       </a>
       <div className="hero-dots" aria-label="Hero carousel slide navigation">

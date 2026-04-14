@@ -43,7 +43,7 @@ function NavBar() {
             </li>
           ))}
         </ul>
-        <a className="btn-book-nav" href="#book">
+        <a className="btn-book-nav" href="https://groomer.io/salon-booking/funhousepupcuts?p=&c=">
           Book Now
         </a>
         <button
@@ -63,7 +63,11 @@ function NavBar() {
             {link.label}
           </a>
         ))}
-        <a className="btn-book-nav btn-book-nav--mobile" href="#book" onClick={handleLinkClick}>
+        <a
+          className="btn-book-nav btn-book-nav--mobile"
+          href="https://groomer.io/salon-booking/funhousepupcuts?p=&c="
+          onClick={handleLinkClick}
+        >
           Book Now
         </a>
       </div>
